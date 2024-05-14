@@ -66,6 +66,17 @@ const phones = [
     }
 ];
 
+let arr;
+
+let items=JSON.parse(localStorage.getItem('cartItems'))
+
+if(items===null){
+    arr=[]
+}
+else{
+    arr=items
+}
+
 const div = document.getElementById('div')
 
 function rendertems() {
@@ -99,12 +110,21 @@ function rendertems() {
 }
 rendertems()
 
-function addToCart(index) {
-if (phones.includes(phones[index])) {
-   console.log(phones[index].quantity += 1); 
-}
-else{
-console.log(index);
 
+
+function addToCart(index) {
+if(arr.includes(phones[index])){
+    phones[index].quantity += 1;
+}else{
+    phones[index].quantity = 1;
+    arr.push(phones[index]);
 }
+console.log(arr);
+}
+
+
+
+function goToCart() {
+localStorage.setItem('cartItems' , JSON.stringify(arr))
+window.location='cart.html'    
 }
