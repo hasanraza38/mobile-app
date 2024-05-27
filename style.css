@@ -4,24 +4,39 @@
     padding: 0;
 }
 
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
 #nav-logo{
     width: 200px;
 }
 
 #nav-searchbar{
-    display :flex
+    display :flex;
+    margin-right: 0;
+    gap: none;
+    width: 60vw;
+
 
 }
 #search-btn
 {
-    border: 0;
-    border-radius: 2px;
+    border: none;
+    border-radius: 5px;
     padding: 14px;
     background-color: #fcaf01;
 }
 
 #searh-bar{
     padding: 15px;
+}
+#nav-1{
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #nav-2{
@@ -30,10 +45,70 @@
     justify-content: center;
     align-items:center ;
      justify-content:space-evenly ;
-    /* gap: 30px; */
-    padding: 15px;
+     padding: 15px;
+     height: 8vh;
 }
-#nav-2 h1{
-    font-size: 20px;
-    color: aliceblue;
+
+
+#nav-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+#nav-cart h5 , #nav-login h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+#nav-cart i{
+    color: #fcaf01;
+    padding-bottom: 8px;
+
+}
+#cart-login-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+#nav2-button{
+    background-color: #fcaf01;
+     padding-left: 15px;
+     padding-right: 15px ;
+     padding-top: 8px ;
+     padding-bottom: 8px;
+    border-radius: 5px;
+    border: none;
+    color: azure;
+    font-weight: 600;
+}
+#nav2-h1{
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+#nav2-h1 h1{
+    font-size: 15px;
+}
+
+/* #nav2-h1 h1 :hover{
+background-color: #fcaf01;
+cursor: pointer;
+} */
+
+/* #carouselExampleAutoplaying{
+    width: 100%;
+    
+} */
+
+/* #carousalheigt{
+    width: 90vw;
+} */
+
+#mobile-wranty-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
