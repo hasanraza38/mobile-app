@@ -63,6 +63,15 @@ const phones = [
         rom: 256,
         camera: '108MP Quad Camera',
         price: 'PKR 229,999'
+    },
+
+    {
+        brand: 'Tecno',
+        model: 'Pova Neo 3',
+        ram: 8,
+        rom: 128,
+        camera: '108MP Quad Camera',
+        price: 'PKR 54,999'
     }
 ];
 
@@ -85,22 +94,21 @@ function rendertems() {
         // console.log(phones[i]);
     
         div.innerHTML +=`
-        <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">${phones[i].brand} ${phones[i].model}</h5>
-                  <h6 class="card-title">${phones[i].price}</h6>
-    
-                  <p class="card-text">storage</p>
-                 
-                  <div>
-    
-                  <p class="card-text">${phones[i].rom}-${phones[i].ram}</p>
-                  
-                  </div>
-                  <button onclick='addToCart(${i})' type="button" class="btn btn-primary">add to cart</button>
+                     
+  <div class="card" style="width: 18rem;">
+  <img id="cardimg" src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-lastly-699122.jpg&fm=jpg" class="card-img-top" alt="card-image">
+  <div class="card-body">
+  <h5 class="card-title"><b>${phones[i].brand} ${phones[i].model}</b></h5>
+  <h6 class="card-title">${phones[i].price}</h6>
+  <h6 class="card-text">${phones[i].rom}/${phones[i].ram}</h6>
+  
 
-                </div>
-              </div>`
+  
+  <button id="cbtn" onclick='addToCart(${i})' type="button" class="btn btn-primary">Add to cart</button>
+  </div>
+</div>
+              
+              `
         
     
         
