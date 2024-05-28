@@ -3,16 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carts</title>
+    <title>ApnaPhone|Carts</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark">
+<body >
 
-    <h1 class="text-center text-light mt-4">Carts</h1>
 
-    <div id="cart" class="container mt-3  d-flex flex-wrap  justify-content-center gap-2"></div>
+    <nav class="navbar bg-body-tertiary">
+        <div id="nav-1" class="container-fluid">
+            <img id="nav-logo" width="150vw" src="https://apnaphone.pk/img/logo.svg" alt="logo" >
+          <form class="d-flex" role="search">
+
+    <div id="nav-searchbar">
+    <input id="search-bar" width="50vw" class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+    <button id="search-btn" class="fa-solid fa-magnifying-glass" type="submit"></button>
+        </div>
+          </form>
+          <div id="cart-login-div">
+            <div onclick="goToCart()" id="nav-cart"><i class="fa-solid fa-cart-shopping"></i><h5>Cart</h5></div>
+          <div id="nav-login"><h5>Login</h5></div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="nav-2" >
+        <div id="nav2-h1">
+          <h1>Cerified Phones</h1>
+        <h1>Sell phone</h1>
+        <h1>IMEI Verification</h1>
+        <h1>Phone Specs</h1>
+
+        </div>
+
+        <div>
+        <button id="nav2-button">Get Instant Cash</button>
+
+        </div>
+      </div>
+
+    <!-- <h1 class="text-center text-light mt-4">Carts</h1> -->
+
+
+<!-- <div></div>
+
+    <div id="cart-div">
+
+        <div id="cartdh">
+            <div>Image</div>
+            <div>Product Name</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Total</div>
+            <div>Remove</div>
+
+        </div>
+
+
+
+    </div> -->
+
+
+
+
+<div class="container">
+
+
+    <div id="cart-h1">
+        <h1>Home-<b>Carts</b></h1>
+
+
+    </div>
+
+    <div>
+        <div id="cart-pdiv">
+
+            <!-- <div id="cartdh">
+                <div id="Product" >Product Name</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Total</div>
+                <div>Remove</div>
+
+                
+            </div> -->
+
+            <!-- <div id="cart-cdiv">
+
+                <h2>IPhone 7 Plus (PTA Approved)</h2>
+
+                <h2>Rs. 35,000	</h2>
+                <h2>1</h2> 
+                <h2>Rs. 35,000</h2>
+              <button type="button" class=" btn btn-danger">Remove</button>
+
+
+
+
+
+            </div> -->
+    
+    
+    
+        </div> 
+    
+        
+    </div>
+
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div id="f-div">
+        
+        <div>
+          <h1>ApnaPhone</h1>
+          <p>Sell Old & Used Mobile Phones Online in Pakistan.
+        
+          </p>
+        </div>
+        
+        <div>
+          <h1>Quick Links</h1>
+          <p>Certified Phones</p>
+          <p>Sell Phone  </p>
+          <p>IMEI Verification</p>
+          <p>Phone Specs</p>
+        
+        </div>
+        
+        <div>
+          <h1>Support</h1>
+        
+          <p>About us</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Contact us</p>
+        
+        </div>
+        </div>
+        
+        </footer>
+        <div id="cp">
+        
+          <h2>clone by HASAN RAZA</h2>
+        
+        </div>
+        
+
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/166ba669ce.js" crossorigin="anonymous"></script>
     <script src="cart.js"></script>
 </body>
 </html>
