@@ -441,3 +441,22 @@ footer{
     font-size: 2.3vw;
     font-weight: 700;
 }
+
+#cart-emt{
+    background-color: rgb(212, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+    padding: 4vw;
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px rgb(90, 89, 89);
+    
+}
+
+#cart-emt h1{
+    color: #252525;
+    font-weight: 400;
+    font-size: 3vw;
+    text-transform: capitalize;
+}

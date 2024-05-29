@@ -38,6 +38,13 @@ function renderCart(){
     <h1>Total Amount :${total}</h1>
     `
   }
+  else{
+    cart.innerHTML=`<div id="cart-emt">
+    <h1>The Cart Is Emty!!</h1>
+
+  </div>`
+    
+  }
 
   }
 

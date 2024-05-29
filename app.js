@@ -79,7 +79,7 @@ let arr;
 
 let items=JSON.parse(localStorage.getItem('cartItems'))
 
-if(items===null){
+if(items === null){
     arr=[]
 }
 else{
@@ -122,6 +122,8 @@ rendertems()
 
 function addToCart(index) {
 if(arr.includes(phones[index])){
+    console.log('item included');
+
     phones[index].quantity += 1;
 }else{
     phones[index].quantity = 1;
