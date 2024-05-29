@@ -2,13 +2,15 @@
 
 let cartItems=JSON.parse(localStorage.getItem('cartItems'))
 
-// const cart = document.getElementById('cart')
+const totalAmount = document.getElementById('total-amount')
 const cart = document.getElementById('cart-pdiv')
 
 function renderCart(){
+  let total =0;
   if(cartItems != null && cartItems.length> 0){
 
     for (let i = 0; i < cartItems.length; i++) {
+      total += cartItems[i].price * cartItems[i].quantity;
 
         cart.innerHTML +=`
         <div id="cart-cdiv">
@@ -30,13 +32,11 @@ function renderCart(){
         
          
       <button onclick="deleteItem(${i})" type="button" class=" btn btn-danger">Remove</button>
-
-
-      
-      
-      
-      </div>`
+</div>`
     }
+    totalAmount.innerHTML=`
+    <h1>Total Amount :${total}</h1>
+    `
   }
 
   }

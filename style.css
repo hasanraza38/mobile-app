@@ -432,3 +432,12 @@ footer{
     font-weight: 500;
     font-size: 1.7vw;
 }
+
+#total-amount{
+    display: flex;
+    justify-content: end;
+}
+#total-amount h1{
+    font-size: 2.3vw;
+    font-weight: 700;
+}
