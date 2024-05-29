@@ -1,3 +1,5 @@
+
+
 let cartItems=JSON.parse(localStorage.getItem('cartItems'))
 
 // const cart = document.getElementById('cart')
@@ -13,30 +15,35 @@ function renderCart(){
 
         <h2>${cartItems[i].brand} ${cartItems[i].model}</h2>
 
-        <h2>${cartItems[i].price * cartItems[i].quantity}</h2>
-
-
-        <h2>Quantity:
+        
+        
+        <h2>
         <button class="btn btn-primary" onclick="addQuantity(${i})">+</button>
+        
         ${cartItems[i].quantity}
+
+        
         <button class="btn btn-primary" onclick="lessQuantity(${i})">-</button>
         </h2>
 
-        <h2>1</h2> 
-      <button type="button" class=" btn btn-danger">Remove</button>
+        <h2>${cartItems[i].price  * cartItems[i].quantity}</h2>
+        
+         
+      <button onclick="deleteItem(${i})" type="button" class=" btn btn-danger">Remove</button>
 
 
-
-
-
-    </div>`
+      
+      
+      
+      </div>`
     }
   }
 
   }
 
 
-
+  
+  let render = renderCart();
 
 
 
@@ -52,23 +59,28 @@ function addQuantity(i)
   cartItems[i].quantity +=1
 
   renderCart()
-  console.log();
+  // console.log();
 }
 
 function lessQuantity(i)
 {
-  div.innerHTML = ''
+  cart.innerHTML = ''
 
   if(cartItems[i].quantity <= 1){
       cartItems.splice(i , 1);
+      renderCart()
 
   }
   else{
-      cartItems[i].quantity -= 1
+
+
+    cartItems[i].quantity -=1
+    renderCart()
+
   }
 
 
-  renderItems()
+  //  rendercart()
 
 }
 
@@ -77,12 +89,12 @@ function lessQuantity(i)
 
 
 function deleteItem(i){
-    div.innerHTML = ''
+    cart.innerHTML = ''
     cartItems.splice(i , 1);
     totalAmount.innerHTML = ''
-    renderItems()
+  
+    renderCart()
+
 }
 
 
-
-renderCart()
