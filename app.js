@@ -75,20 +75,20 @@ const phones = [
     }
 ];
 
-let arr;
+let arr=[];
 
 let items=JSON.parse(localStorage.getItem('cartItems'))
 
-if(items === null){
-    arr=[]
-}
-else{
-    arr=items
-}
+// if(items === null){
+//     arr=[]
+// }
+// else{
+//     arr=items
+// }
 
-const div = document.getElementById('div')
+const div = document.querySelector('#div')
 
-function rendertems() {
+function renderItems() {
     for (let i = 0; i < phones.length; i++) {
 
         // console.log(phones[i]);
@@ -116,7 +116,7 @@ function rendertems() {
     
     
 }
-rendertems()
+renderItems()
 
 
 
@@ -136,5 +136,6 @@ console.log(arr);
 
 function goToCart() {
 localStorage.setItem('cartItems' , JSON.stringify(arr))
-window.location='cart.html'    
+window.location='cart.html'   
+console.log('goto cart'); 
 }

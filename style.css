@@ -421,7 +421,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f1ac2c;
+    /* background-color: #f1ac2c; */
     gap: 5vw;
     padding: 0px 20px;
 }

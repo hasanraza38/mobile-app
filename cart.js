@@ -7,9 +7,10 @@ const cart = document.getElementById('cart-pdiv')
 
 function renderCart(){
   let total =0;
-  if(cartItems != null && cartItems.length> 0){
+  if(cartItems != null && cartItems.length > 0){
 
     for (let i = 0; i < cartItems.length; i++) {
+      // console.log(cartItems[i]);
       total += cartItems[i].price * cartItems[i].quantity;
 
         cart.innerHTML +=`
