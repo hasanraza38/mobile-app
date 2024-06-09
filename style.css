@@ -153,6 +153,12 @@ font-weight: 700;
     background-color:#129d80 ;
     border: none;
 }
+#cbtn:hover{
+    background-color: #f5b92e;
+    color: #040505;
+
+
+}
 #gtc{
     display: flex;
     justify-content: center;
@@ -164,6 +170,13 @@ font-weight: 700;
     border: none;
     padding: 10px 25px;
     font-weight: 600;
+}
+#gtc button:hover{
+    background-color: #f5b92e;
+    transform: scale(1.1);
+    color: #040505;
+
+
 }
 #sellsec{
     display: flex;
@@ -459,4 +472,8 @@ footer{
     font-weight: 400;
     font-size: 3vw;
     text-transform: capitalize;
+}
+
+#cart-home:hover{
+    font-weight: 700;
 }

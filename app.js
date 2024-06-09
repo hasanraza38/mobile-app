@@ -116,11 +116,12 @@ function renderItems() {
     
     
 }
-renderItems()
 
 
 
 function addToCart(index) {
+    localStorage.setItem('cartItems' , JSON.stringify(arr))
+    
 if(arr.includes(phones[index])){
     console.log('item included');
 
@@ -128,14 +129,17 @@ if(arr.includes(phones[index])){
 }else{
     phones[index].quantity = 1;
     arr.push(phones[index]);
-}
-console.log(arr);
-}
+    }
+    console.log(arr);
+    }``
+    
+    
+    
+    function goToCart() {
+        window.location='cart.html'   
+        console.log('goto cart'); 
+        }
 
 
-
-function goToCart() {
-localStorage.setItem('cartItems' , JSON.stringify(arr))
-window.location='cart.html'   
-console.log('goto cart'); 
-}
+        
+    renderItems()
